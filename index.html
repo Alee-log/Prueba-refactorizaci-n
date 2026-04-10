@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Básica HTML5 con CSS Inline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header-container">
+        <h1 class="header-title">Mi pagina web con <b>HTML5 & CSS3</b>  <kbd>|</kbd> <i> V 1.0 </i></h1>
+        <nav class="header-nav">
+            <a href="#INICIO">INICIO</a>
+            <a href="#SERVICIOS">SERVICIOS</a>
+            <a href="#CONTACTO">CONTACTO</a>
+        </nav>
+    </div>
+
+    <main class="main-container">
+        <hr>
+        <h1 class="main-subtitle">Estructura Básica usando <b>HTML5 & CSS3</b></h1>
+        <hr>
+
+        <section class="ejercicio-section">
+            <h2 class="ejercicio-title">Ejercicio Practico</h2>
+            <p class="ejercicio-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </section>
+
+        <article class="refactor-article">
+            <h3 class="refactor-title">REFACTORIZACIÓN DE CODIGO HTML & CSS</h3>
+            <ol class="refactor-list">
+                <li>Revisa la buenas practicas de maquetación dentro del codigo HTML</li>
+                <li>Tu misión es separar el codigo CSS contenido dentro del codigo HTML con el tipo de definición inline,
+                    deberas crear las clases css correspondientes sin que el diseño se vea afectado y crear un archivo de 
+                    estilos que contenga todo el codigo CSS.
+                </li>
+            </ol>
+        </article>
+    </main>
+
+    <article class="bienvenido-article">
+        <h3 class="bienvenido-title">Bienvenido</h3>
+        <p>Esta es una introducción a HTML el lenguaje base para construir paginas web.</p>
+        <h3>Diseño Responsivo</h3>
+        <p>El diseño Responsivo en una web site significa que nuestra pagina web debera adaptarse a las dimensiones de los distintos dispositivos que existen.</p>
+        <img class="bienvenido-img" src="https://miro.medium.com/v2/resize:fit:750/1*3y-iWJz57eG-6AF6QSXp5w.jpeg" alt="one-piece" height="250" width="400">
+        <br>
+        <p>Mi experiencia comenzando a aprender HTML y CSS</p>
+        <p><kbd>|</kbd> <i>AUTOR: Valeria Meneses</i></p>
+    </article>
+
+    <section id="INICIO" class="inicio-section">
+        <div class="inicio-container">
+            <div class="inicio-cards-wrapper">
+                <div class="section-card">
+                    <span class="card-number">1</span>
+                    <h2>INICIO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="card-link" href="#INICIO">Saber más</a>
+                </div>
+                <div class="section-card">
+                    <span class="card-number">2</span>
+                    <h2>SERVICIOS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="card-link" href="#SERVICIOS">Saber más</a>
+                </div>
+                <div class="section-card">
+                    <span class="card-number">3</span>
+                    <h2>CONTACTO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="card-link" href="#CONTACTO">Saber más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="SERVICIOS" class="servicios-section">
+        <aside class="servicios-aside">
+            <h2 class="servicios-title">Servicios</h2>
+            <p class="servicios-text">Ofrecemos desarrollo web, diseño responsivo y más...</p>
+
+            <h2 class="codigo-title">Codigo HTML Embebido</h2>
+            <h3 class="codigo-subtitle">Este link te explica como insertar codigo enbebido dentro de tu codigo html</h3>
+            <button class="video-button" type="button">
+                <a class="video-link" href="https://www.youtube.com/watch?v=5UGkOt0Mngg" target="_blank">Ver Video</a>
+            </button>
+            <br>
+            <br>
+            <hr>
+            <br>
+
+            <div class="tabla-container">
+                <h3>Esta es una tabla unicamente utilizando codigo HTML</h3>
+                <br>
+                <table class="tabla-bancaria" align="center">
+                    <thead>
+                        <tr>
+                            <th>Entidad Bancaria</th>
+                            <th>Número de cuenta</th>
+                            <th>Moneda</th>
+                            <th>Propietario de la cuenta</th>
+                            <th>Monto de la cuenta</th>
+                            <th>Fecha de apertura</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Banpro</td>
+                            <td>109254478</td>
+                            <td>($) Dolares</td>
+                            <td>Marcelo Vasquez</td>
+                            <td>500</td>
+                            <td>31/03/2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </aside>
+    </section>
+
+    <section class="graphics-section">
+        <h2>HTML Graphics</h2>
+        <p>Ejemplo de dibujo con Canvas:</p>
+        <canvas id="myCanvas" width="400" height="200" class="myCanvas"></canvas>
+    </section>
+
+    <br>
+
+    <aside class="contacto-aside">
+        <section id="CONTACTO" class="contacto-section">
+            <div class="contacto-container">
+                <div class="contacto-wrapper">
+                    <div class="section-card contacto-card">
+                        <iframe class="contacto-iframe" width="420" height="315" src="https://www.youtube.com/embed/5UGkOt0Mngg" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br>
+                        <br>
+                        <button class="contacto-video-btn" type="button" onclick="myFunction()">Ver Video</button>
+                        <br>
+                        <br>
+                        <h2 class="contacto-subtitle">CONTACTO</h2>
+                        <p>Deja tu correo para conocer más sobre nuestras promociones.</p>
+                        <form class="contacto-form" action="/enviar" method="POST">
+                            <label for="e-mail">Escribe tu Email:</label>
+                            <input class="contacto-email-input" type="email" id="e-mail" name="e-mail" required>
+                            <a class="contacto-enviar-link" href="#SERVICIOS">Enviar</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+
+    <footer class="footer">
+        <p>© 2025 Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
